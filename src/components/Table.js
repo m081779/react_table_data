@@ -21,7 +21,7 @@ export default class Table extends Component {
         <table className="table table-bordered table-striped table-hover">
           <TableHeader>
             <Row>
-              <Heading align="centered">First Name</Heading> 
+              <Heading >First Name</Heading> 
               <Heading>Last Name</Heading>
               <Heading>Home</Heading>
             </Row>
@@ -30,15 +30,15 @@ export default class Table extends Component {
           {/* map through table_data array in state, and construct rows with data for each object in the array */}
             {this.state.table_data.map((row, i) => {
               return(
-                <Row key={i}> {/* key for use as unique identifier for react */}
+                <Row key={i}>
                   <Data>
-                    {row.first_name ? row.first_name : 'Not Available'} {/* ternary to handle null entries in database */}
+                    {row.first_name ? row.first_name : 'Not Available'/* ternary to handle null entries in database */}
                   </Data>
                   <Data>
-                    {row.last_name ? row.last_name : 'Not Available'} {/* ternary to handle null entries in database */}
+                    {row.last_name ? row.last_name : 'Not Available'/* ternary to handle null entries in database */}
                   </Data>
                   <Data>
-                    {row.home ? row.home : 'Not Available'} {/* ternary to handle null entries in database */}
+                    {row.home ? row.home : 'Not Available'/* ternary to handle null entries in database */}
                   </Data>
                 </Row>
               )
