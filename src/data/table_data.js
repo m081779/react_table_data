@@ -1,3 +1,7 @@
+
+
+// Mock database table for populating the table
+
 const table_data = [ { first_name : 'Rose',
   last_name  : 'Tyler',
   home       : 'Earth' },
@@ -23,4 +27,4 @@ const table_data = [ { first_name : 'Rose',
   last_name  : 'Foreman',
   home       : 'Gallifrey'} ];
 
-  module.exports = table_data;
+  export default table_data;
